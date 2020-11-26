@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson_27</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+<body>
+
+<main>
+    <section>
+        <div class="container mt-lg-5">
+            <div class="row bg-secondary">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>1.Task adding</h4>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" id="name" class="form-control" placeholder="Enter name">
+                            <input type="date" id="date" class="form-control mt-lg-2">
+                            <select id="category" class="form-control mt-lg-2">
+                                <option value="doing">Doing</option>
+                                <option value="done">Done</option>
+                            </select>
+                            <button onclick="addTask()" type="button" class="btn btn-primary btn-block mt-lg-2">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header bg-warning">
+                            <h4>Doing</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="doingList">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header bg-success">
+                            <h4>Done</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="doneList">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header bg-danger">
+                            <h4>Completed</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="completedList">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
